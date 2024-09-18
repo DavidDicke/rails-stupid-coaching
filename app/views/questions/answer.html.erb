@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-6 border m-4 p-4">
+      <div class="border-start border-3 conversation-block px-2 py-1 my-2">
+        <p class="my-0"><%= params[:question] %></p>
+        <p class="my-0"><em>–You</em></p>
+      </div>
+      <div class="border-start border-3 bg-warning px-2 py-1 my-2">
+        <p class="my-0"><strong><%= @answer %></strong></p>
+        <p class="my-0"><em>–Your coach</em></p>
+      </div>
+      <p><%= link_to 'Ask another question!', ask_path, class: "text-decoration-none" %></p>
+    </div>
+  </div>
+</div>
